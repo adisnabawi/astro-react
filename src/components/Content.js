@@ -29,6 +29,7 @@ const Content = (props) => {
         return <div>Loading...</div>
       } else {
     return (<div className="jumbotron">
+        <img src={items.imageUrl} alt="logo" />
         <h1 className="display-4">{items.title}</h1>
         <p>{items.description}</p>
         </div>)

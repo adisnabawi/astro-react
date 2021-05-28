@@ -57,3 +57,32 @@
   padding: 50px;
   margin-bottom: 20px;
 }
+
+.schedule1 {
+  max-width: 4.5rem;
+  flex-basis: 4.5rem;
+  flex-shrink: 0;
+  line-height: 19px;
+  margin-right: 1rem;
+}
+
+.schedule2 {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ulsc {
+  list-style: none;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.ulsc li {
+  margin: 0.25rem 0;
+  display: flex
+}
+
+.nolinkstyle a {
+  text-decoration: none;
+  color:black
+}
