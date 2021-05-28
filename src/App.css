@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  background-image: linear-gradient(to right bottom, rgb(230, 0, 125), rgb(231, 38, 71));
+}
