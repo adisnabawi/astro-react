@@ -49,11 +49,11 @@ function App() {
             <List lists={items} find={value}/>
           </div>
         </Route>
-        <Route path="/content/:id">
+        <Route path="/content/:idno">
           <Content />
         </Route>
       </Switch>
-      </BrowserRouter>,
+      </BrowserRouter>
       
     </div>
   );

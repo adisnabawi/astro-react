@@ -40,3 +40,20 @@
 .navbar {
   background-image: linear-gradient(to right bottom, rgb(230, 0, 125), rgb(231, 38, 71));
 }
+
+.blackbg {
+  background-color: black;
+  height: 100px;
+  object-fit: contain;
+}
+
+.padbottom {
+  margin-bottom: 15px;
+}
+
+.jumbotron {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  margin-bottom: 20px;
+}
