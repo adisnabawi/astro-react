@@ -59,8 +59,8 @@
 }
 
 .schedule1 {
-  max-width: 4.5rem;
-  flex-basis: 4.5rem;
+  max-width: 4.8rem;
+  /* flex-basis: 4.5rem; */
   flex-shrink: 0;
   line-height: 19px;
   margin-right: 1rem;
@@ -69,6 +69,7 @@
 .schedule2 {
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .ulsc {
@@ -85,4 +86,22 @@
 .nolinkstyle a {
   text-decoration: none;
   color:black
+}
+
+.white a{
+  color:white !important;
+  text-decoration: none;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #e71368;
+}
+
+.nav-link {
+  color:#e71368;
+}
+
+.nav-link:hover{
+  color:#cc0655;
 }

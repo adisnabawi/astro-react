@@ -8,10 +8,10 @@ const Search = (props) => {
         props.onchange(search.current.value);
     };
     return (<div className="jumbotron">
-        <h1 className="display-4">Astro Content Search!</h1>
+        <h1 className="display-4">CONTENT GUIDE</h1>
         <form onSubmit={handleSubmit}>
             <div className="input-group mb-3">
-                <input type="text" className="form-control" placeholder="Search contents"  name="search" ref={search}  value={props.finder} />
+                <input type="text" className="form-control" placeholder="Search Channels"  name="search" ref={search}  value={props.finder} />
                 <div className="input-group-append">
                     <span className="input-group-text" id="basic-addon2" onClick={handleSubmit}>Search</span>
                 </div>

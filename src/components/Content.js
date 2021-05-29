@@ -1,5 +1,6 @@
 import React, {useState, useEffect}  from 'react';
 import { useParams } from 'react-router-dom';
+import { format } from 'date-fns';
 
 const Content = (props) => {
 
@@ -32,10 +33,17 @@ const Content = (props) => {
       } else {
     return (<div>
         <div className="jumbotron">
+          <nav aria-label="breadcrumb">
+            <ol className="breadcrumb">
+              <li className="breadcrumb-item white"><a href="/">Content</a></li>
+              <li className="breadcrumb-item active" aria-current="page">{items.title}</li>
+            </ol>
+          </nav>
         <img src={items.imageUrl} alt="logo" />
         <h1 className="display-4">{items.title}</h1>
         <p>{items.description}</p>
         </div>
+        <div className="container">
         <div className="row">
           <div className="col-md-12">
             <div className="d-flex align-items-start">
@@ -44,7 +52,9 @@ const Content = (props) => {
                 {
                   Object.keys(schedule).map((datesc, i) => 
                     (
-                      <button key={datesc} className={"nav-link" + (i === 0 ? ' active': '')} id={"v-pills-home-" + datesc} data-bs-toggle="pill" data-bs-target={"#v-pills-" + datesc} type="button" role="tab" aria-controls={"v-pills-" + datesc} aria-selected={i === 0 ? ' true': 'false'}>{datesc}</button>
+                      <button key={datesc} className={"nav-link" + (i === 0 ? ' active': '')} id={"v-pills-home-" + datesc} data-bs-toggle="pill" data-bs-target={"#v-pills-" + datesc} type="button" role="tab" aria-controls={"v-pills-" + datesc} aria-selected={i === 0 ? ' true': 'false'}>
+                        { format(new Date(datesc), 'E') }
+                      </button>
                     )
                     
                    
@@ -61,7 +71,10 @@ const Content = (props) => {
                       <ul className="ulsc">
                         {
                           schedule[datesc].map(val => (
-                            <li key={val.eventId}>{val.title} - {val.datetime}</li>
+                            <li key={val.eventId}>
+                              <span className="schedule1">{ format(new Date(val.datetime), 'hh:mm a')}</span> 
+                              <span className="">{val.title}</span>
+                            </li>
                           )
 
                         )
@@ -75,6 +88,7 @@ const Content = (props) => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>)
       }

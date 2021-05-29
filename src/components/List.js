@@ -44,7 +44,7 @@ const List = (props) => {
             return a;
         })
         return (<div className="row"> 
-        <p>Search on  {props.find}. Total {a} found. </p> 
+        <p>Search on  <b>{props.find}</b>. Total {a} found. </p> 
         {props.lists.filter(itemlis => (itemlis.title.toUpperCase()).includes(props.find.toUpperCase())).map((item,i) => (
                 <Router key={"route" + item.id}>
                         <div className="col-md-3 padbottom nolinkstyle" key={item.id}>
