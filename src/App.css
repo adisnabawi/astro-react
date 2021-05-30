@@ -105,3 +105,16 @@
 .nav-link:hover{
   color:#cc0655;
 }
+
+.btnsearch {
+  border-color: rgb(230, 0, 125);
+  background-color: rgb(230, 0, 125);
+  height: 45px;
+  border-top-right-radius: 30%;
+  border-bottom-right-radius: 30%;
+  cursor: pointer;
+}
+
+.btnsearch:active {
+  background-color: rgb(196, 0, 108);
+}
