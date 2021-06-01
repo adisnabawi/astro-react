@@ -57,7 +57,7 @@ const List = (props) => {
                                 { item.isAstroGoExclusive === false ? "CH " + item.stbNumber : item.title } 
                                     <ul className="ulsc">
                                     {item.currentSchedule.map(sche => (
-                                        <li>
+                                        <li key={"schedule-eventid-" + sche.eventId}>
                                             <span className="schedule1">{ format(new Date(sche.datetime), 'hh:mm a')}</span> 
                                             <span className="schedule2">{sche.title}</span> 
                                         </li>

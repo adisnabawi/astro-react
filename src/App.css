@@ -118,3 +118,14 @@
 .btnsearch:active {
   background-color: rgb(196, 0, 108);
 }
+
+.category {
+  position: relative;
+  white-space: nowrap;
+  display: inline-flex;
+  overflow-x: scroll;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
