@@ -74,7 +74,7 @@ function App() {
                   <div className="card">
                     <img className="card-img-top" src="https://de-acm-assets.eco.astro.com.my/images/content-hub/channel-categories/chcategory_VariantB_sports.jpg" alt="Card variety" />
                     <div className="card-body">
-                      <p className="card-text">Variety Entertainment</p>
+                      <p className="card-text">Variety</p>
                     </div>
                   </div>
                 </NavLink>
@@ -116,7 +116,7 @@ function App() {
                   <div className="card">
                     <img className="card-img-top" src="https://de-acm-assets.eco.astro.com.my/images/content-hub/channel-categories/chcategory_VariantB_sports.jpg" alt="Card variety" />
                     <div className="card-body">
-                      <p className="card-text">Variety Entertainment</p>
+                      <p className="card-text">Variety</p>
                     </div>
                   </div>
                 </NavLink>

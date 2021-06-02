@@ -128,4 +128,14 @@
   margin-bottom: 20px;
 }
 
+.category .card-img-top {
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.category .card {
+  margin-right:20px;
+  margin-bottom: 20px;
+}
+
 
