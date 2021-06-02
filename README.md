@@ -1,6 +1,6 @@
 # Exercise ASTRO Channel
 
-This project exercise to build a front end based on https://content.astro.com.my/
+This project exercise to build a front end based on https://content.astro.com.my/ \
 Created this using ReactJS as Astro using React in their front end.
 
 ## Available Scripts
